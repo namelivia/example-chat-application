@@ -1,0 +1,15 @@
+doctype html
+html(lang="en")
+	head
+	title= "Chat Example Application"
+	link(rel='stylesheet', href='/css/style.css')
+	script(src='/lib/jquery-1.11.1.min.js')
+	script(src='/socket.io/socket.io.js')
+	block scripts 
+	body
+		#main
+			#header
+				h1 Chat Example Application
+			block content 
+			#footer
+				p Some footer info

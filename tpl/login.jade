@@ -1,0 +1,29 @@
+extends main
+block content 
+	#login
+		h1 Welcome to the Chat Example Application, log in or sign up to start
+		#loginForm.prettyForm
+			h1 Login
+			form(action='/login',method='post')
+				label Username 
+				input#username(type='text', name="username")
+				br
+				label Password 
+				input#password(type='password', name="password")
+				br   
+				input#set(type='submit', value='Log In')
+				br
+		#registerForm.prettyForm
+			h1 Sign Up 
+			form(action='/register',method='post')
+				label Username 
+				input#username(type='text', name="username")
+				br
+				label Password 
+				input#password(type='password', name="password")
+				br   
+				label Confirm password 
+				input#password(type='password', name="passwordConfirm")
+				br   
+				input#set(type='submit', value='Sign Up')
+				br

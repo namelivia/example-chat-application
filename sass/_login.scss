@@ -1,0 +1,18 @@
+#login{
+	@include span(12 of 12 last);
+	padding:gutter(12);
+}
+.prettyForm{ 
+	padding:gutter(12);
+	input[type=submit]{
+		margin-top:1rem;
+	}
+}
+#loginForm{
+	@include span(5 wide of 12);
+	margin-left:gutter(12);
+}
+#registerForm{
+	@include span(5 wide of 12 last);
+	margin-right:gutter(12);
+}

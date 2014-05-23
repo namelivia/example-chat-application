@@ -1,0 +1,59 @@
+$background-color: #ABA78D;
+$header-footer-color: #769683;
+$input-color: #303030;  
+$button-color-light: #D0ABA3;
+$button-color-dark: #9C5C4F;
+$text-color: white;
+
+body{
+	background-color:$background-color;
+}
+ul,ol{
+	list-style:none;
+}
+#main{
+	@include container;
+	h1{
+		color:white;
+		font-size:1rem;
+	}
+	input[type=text],input[type=password]{
+		background-color:$input-color;
+		@include border-radius(5px);
+		color:$text-color;
+		border:solid 1px $text-color;
+		padding:2px;
+	}
+	label{
+		font-size:0.8rem;
+		display:block;
+		color:$text-color;
+	}
+	input[type=submit],input[type=button]{
+		@include sassy-button("simple", 5px, 1rem,$button-color-light,$button-color-dark,#fff, "raised");
+	}
+}
+#header{
+	@include span(12 of 12 last);
+	background-color:$header-footer-color;
+	padding-left:gutter(12);
+	padding-right:gutter(12);
+	h1{
+		color:$text-color;
+		font-size:2rem;
+	}
+	@include box-shadow(0px 10px 10px rgba(0,0,0,.2));
+}
+#footer{
+	@include span(12 of 12 last);
+	background-color:$header-footer-color;
+	padding-left:gutter(12);
+	padding-right:gutter(12);
+	p{
+		color:$text-color;
+		font-size:1rem;
+	}
+	position:fixed;
+	bottom:0px;
+	@include box-shadow(0px -10px 10px rgba(0,0,0,.2));
+}

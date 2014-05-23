@@ -1,0 +1,13 @@
+extends main
+block scripts
+	script(src='/js/Hall.js')
+block content 
+	script.
+		username="#{user}";
+	#hall
+		#chatWrapper
+			#chat
+			#sendChat
+				input#chatInput(type='text', name="chatInput")
+				input#send(type='button', value='Send')
+		#connectedUsers

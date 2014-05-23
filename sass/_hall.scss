@@ -1,0 +1,36 @@
+#hall{
+	@include span(12 of 12 last);
+	padding:gutter(12);
+}
+#chatWrapper{
+	@include span(9 of 12);
+}
+#chat{
+	@include span(9 of 9);
+	background-color:$input-color;
+	@include border-radius(5px);
+	color:$text-color;
+	border:solid 1px $text-color;
+	padding:2px;
+	height:21rem;
+	margin-bottom:1em;
+	overflow-y:scroll;
+}
+#connectedUsers{
+	@include span(3 of 12 last);
+	background-color:$input-color;
+	@include border-radius(5px);
+	color:$text-color;
+	border:solid 1px $text-color;
+	height:21rem;
+	overflow-y:scroll;
+}
+#sendChat{
+	width:100%;
+	input[type=text]{
+		@include span(8 of 9);
+	}
+	input[type=button]{
+		@include span(1 of 9 last);
+	}
+}

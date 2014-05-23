@@ -1,0 +1,23 @@
+{
+    "name": "NinjaGame",
+    "version": "0.0.0",
+    "description": "A game featuring ninjas",
+    "dependencies": {
+        "socket.io": "latest",
+        "express": "latest",
+        "jade": "latest",
+		"mongoose" : "latest",
+		"passport" : "latest",
+		"passport-local" : "latest",
+		"body-parser" : "latest",
+		"cookie-parser" : "latest",
+		"method-override" : "latest",
+		"express-session" : "latest",
+		"passport-mongoose" : "latest",
+		"passport-local-mongoose" : "latest",
+		"gulp" : "latest",
+		"gulp-compass" : "latest",
+		"gulp-minify-css" : "latest"
+    },
+    "author": "namelivia"
+}
