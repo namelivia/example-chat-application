@@ -1,6 +1,6 @@
 var socket;
 $(document).on('ready',function(){
-	socket = io.connect('http://192.168.1.128:60000');
+	socket = io.connect('http://nosferatu.sytes.net:60000');
 	$(document).keypress(function(e) {
 		    if(e.which == 13) {
 				$('#send').trigger('click');
